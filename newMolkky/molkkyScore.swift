@@ -33,7 +33,7 @@
 //
 //    var body: some View {
 //        if showWinView {
-//            You_are_win(winner: $teamSelect)
+////            You_are_win(winner: $teamSelect)
 //        } else {
 //            VStack(spacing:-15) {
 //                HStack {

@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct molkkyappApp: App {
+    
+    var shareData = ShareData()
+    
     var body: some Scene {
+        
         WindowGroup {
             ContentView()
+                .environmentObject(shareData)
         }
     }
 }

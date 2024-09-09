@@ -9,44 +9,82 @@ import SwiftUI
 
 struct input_team_names: View {
     
-    @Binding var numberOfTeams:Int
-    @State var inputTeamNames:[String] = []
+    @EnvironmentObject var shareData: ShareData
+    
     @State private var teamNameLimit = 9
     
     @State private var startGame = false
     
+    @Binding var numberOfTeams:Int
+    
+//    @Binding var inputTeamNames:[String]
+    
+//    @Binding var nowScore:[Int]
+//    @Binding var totalScore:[Int]
+//    @Binding var resultScore:[[Int]]
+//    
+//    @Binding var missShot:[[Bool]]
+    
+    @Binding var gameResult:[Int]
+    
     var body: some View {
         
-        if startGame {
-            VS_View(teamNames: $inputTeamNames)
-        } else {
-            VStack {
-                ForEach(0..<inputTeamNames.count,id:\.self) { inputName in
-                    TextField("チーム名を入力してください",text: $inputTeamNames[inputName])
-                        .padding()
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                        .onChange(of: inputTeamNames[inputName]) {
-                            if inputTeamNames[inputName].count > teamNameLimit {
-                                inputTeamNames[inputName] = String(inputTeamNames[inputName].prefix(teamNameLimit))
-                            }
+        VStack {
+            if startGame {
+                VS_View(numberOfTeams: $numberOfTeams,
+//                        teamNames: $inputTeamNames,
+//                        nowScore: $nowScore,
+//                        totalScore: $totalScore,
+//                        resultScore: $resultScore,
+//                        missShot: $missShot,
+                        gameResult: $gameResult
+                )
+            } else {
+                if shareData.teams.count > 0 {
+                    
+                    VStack {
+                        ForEach(0...numberOfTeams,id:\.self) { inputName in
+                            TextField("チーム名を入力してください",text: $shareData.teams[inputName].name)
+                                .padding()
+                                .textFieldStyle(RoundedBorderTextFieldStyle())
+                                .onChange(of: shareData.teams[inputName].name) {
+                                    if shareData.teams[inputName].name.count > teamNameLimit {
+                                        shareData.teams[inputName].name = String(shareData.teams[inputName].name.prefix(teamNameLimit))
+                                    }
+                                }
                         }
+                        
+                        Button(action: {
+                                if allFieldsFilled() {
+                                    
+                                    startGame.toggle()
+                                } else {
+                                    print("チーム名を入力してね")
+                                }
+                        }, label: {
+                            Text("対戦開始")
+                        })
+                        .disabled(!allFieldsFilled())
+                    }
                 }
-                
-                Button(action: {
-                    startGame.toggle()
-                    print(inputTeamNames)
-                }, label: {
-                    Text("対戦開始")
-                })
-            }
-            
-            .onAppear {
-                inputTeamNames = Array(repeating: "",count: numberOfTeams)
             }
         }
     }
+    
+    func allFieldsFilled() -> Bool {
+        return shareData.teams.allSatisfy { !$0.name.isEmpty}
+    }
+    
 }
 
 #Preview {
-    input_team_names(numberOfTeams: .constant(2))
+    input_team_names(numberOfTeams: .constant(1),
+//                     inputTeamNames: .constant(["キングオブモルック","コンクルスス"]),
+//                     nowScore: .constant([0,0]),
+//                     totalScore: .constant([0,0]),
+//                     resultScore: .constant([[],[]]),
+//                     missShot: .constant([[false,false,false,],[false,false,false]]),
+                     gameResult: .constant([0,0])
+    )
+    .environmentObject(ShareData())
 }

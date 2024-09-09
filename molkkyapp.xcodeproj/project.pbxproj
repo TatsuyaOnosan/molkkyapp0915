@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D0BB0542C5A2E16000205A7 /* dentaku.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0BB0532C5A2E16000205A7 /* dentaku.swift */; };
+		0D494A352C7F644B0026EE8B /* molkkyScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D494A342C7F644B0026EE8B /* molkkyScore.swift */; };
+		0D507A282C8E973D005A0F82 /* shareData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D507A272C8E973D005A0F82 /* shareData.swift */; };
+		0D507A2A2C8E9758005A0F82 /* TeamData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D507A292C8E9758005A0F82 /* TeamData.swift */; };
+		0D507A2F2C8E981E005A0F82 /* TeamNameInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D507A2E2C8E981E005A0F82 /* TeamNameInput.swift */; };
+		0D507A312C8EB3EA005A0F82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D507A302C8EB3EA005A0F82 /* Assets.xcassets */; };
 		0D5364712C774EFF00E89197 /* VS_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5364702C774EFF00E89197 /* VS_View.swift */; };
 		0D60BA632C50C60500A9F416 /* molkkyappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D60BA622C50C60500A9F416 /* molkkyappApp.swift */; };
 		0D60BA652C50C60500A9F416 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D60BA642C50C60500A9F416 /* ContentView.swift */; };
-		0D60BA672C50C60600A9F416 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D60BA662C50C60600A9F416 /* Assets.xcassets */; };
 		0D60BA6B2C50C60600A9F416 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D60BA6A2C50C60600A9F416 /* Preview Assets.xcassets */; };
 		0D60BA752C50C60600A9F416 /* molkkyappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D60BA742C50C60600A9F416 /* molkkyappTests.swift */; };
 		0D60BA7F2C50C60600A9F416 /* molkkyappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D60BA7E2C50C60600A9F416 /* molkkyappUITests.swift */; };
@@ -19,7 +22,6 @@
 		0D60BA8E2C50E61400A9F416 /* molkkyIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D60BA8D2C50E61400A9F416 /* molkkyIcon.swift */; };
 		0D78090F2C75E7AB00392A1B /* inputScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D78090E2C75E7AB00392A1B /* inputScore.swift */; };
 		0D8634B92C67675C001C3D14 /* Youarewin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8634B82C67675C001C3D14 /* Youarewin.swift */; };
-		0DABA63B2C5C8654000320AC /* molkkyScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DABA63A2C5C8654000320AC /* molkkyScore.swift */; };
 		0DC01F692C730800007CFBBF /* scoreDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC01F682C730800007CFBBF /* scoreDisplay.swift */; };
 		0DC01F6C2C732E3C007CFBBF /* number_of_teams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC01F6B2C732E3C007CFBBF /* number_of_teams.swift */; };
 		0DC01F6F2C7343DD007CFBBF /* input_team_names.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC01F6E2C7343DD007CFBBF /* input_team_names.swift */; };
@@ -43,12 +45,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0D0BB0532C5A2E16000205A7 /* dentaku.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dentaku.swift; sourceTree = "<group>"; };
+		0D494A342C7F644B0026EE8B /* molkkyScore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = molkkyScore.swift; sourceTree = "<group>"; };
+		0D507A272C8E973D005A0F82 /* shareData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = shareData.swift; path = ../../EnvironmentTest/shareData/shareData.swift; sourceTree = "<group>"; };
+		0D507A292C8E9758005A0F82 /* TeamData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TeamData.swift; path = ../../EnvironmentTest/TeamData/TeamData.swift; sourceTree = "<group>"; };
+		0D507A2E2C8E981E005A0F82 /* TeamNameInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamNameInput.swift; sourceTree = "<group>"; };
+		0D507A302C8EB3EA005A0F82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../Downloads/KingOfMolkky/KingOfMolkky/Assets.xcassets; sourceTree = "<group>"; };
 		0D5364702C774EFF00E89197 /* VS_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VS_View.swift; sourceTree = "<group>"; };
 		0D60BA5F2C50C60500A9F416 /* molkkyapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = molkkyapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D60BA622C50C60500A9F416 /* molkkyappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = molkkyappApp.swift; sourceTree = "<group>"; };
 		0D60BA642C50C60500A9F416 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		0D60BA662C50C60600A9F416 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D60BA682C50C60600A9F416 /* molkkyapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = molkkyapp.entitlements; sourceTree = "<group>"; };
 		0D60BA6A2C50C60600A9F416 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0D60BA702C50C60600A9F416 /* molkkyappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = molkkyappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,7 +64,6 @@
 		0D60BA8D2C50E61400A9F416 /* molkkyIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = molkkyIcon.swift; sourceTree = "<group>"; };
 		0D78090E2C75E7AB00392A1B /* inputScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inputScore.swift; sourceTree = "<group>"; };
 		0D8634B82C67675C001C3D14 /* Youarewin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Youarewin.swift; sourceTree = "<group>"; };
-		0DABA63A2C5C8654000320AC /* molkkyScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = molkkyScore.swift; sourceTree = "<group>"; };
 		0DC01F682C730800007CFBBF /* scoreDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scoreDisplay.swift; sourceTree = "<group>"; };
 		0DC01F6B2C732E3C007CFBBF /* number_of_teams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = number_of_teams.swift; sourceTree = "<group>"; };
 		0DC01F6E2C7343DD007CFBBF /* input_team_names.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = input_team_names.swift; sourceTree = "<group>"; };
@@ -90,12 +94,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0D0BB0522C5A2E05000205A7 /* dentaku */ = {
+		0D507A262C8E96EF005A0F82 /* TeamData */ = {
 			isa = PBXGroup;
 			children = (
-				0D0BB0532C5A2E16000205A7 /* dentaku.swift */,
+				0D507A292C8E9758005A0F82 /* TeamData.swift */,
+				0D507A272C8E973D005A0F82 /* shareData.swift */,
 			);
-			path = dentaku;
+			path = TeamData;
+			sourceTree = "<group>";
+		};
+		0D507A2D2C8E97F2005A0F82 /* TeamNameView */ = {
+			isa = PBXGroup;
+			children = (
+				0D507A2E2C8E981E005A0F82 /* TeamNameInput.swift */,
+			);
+			path = TeamNameView;
 			sourceTree = "<group>";
 		};
 		0D5364722C774F0600E89197 /* VS_View */ = {
@@ -109,13 +122,14 @@
 		0D60BA562C50C60500A9F416 = {
 			isa = PBXGroup;
 			children = (
+				0D507A2D2C8E97F2005A0F82 /* TeamNameView */,
+				0D507A262C8E96EF005A0F82 /* TeamData */,
 				0D5364722C774F0600E89197 /* VS_View */,
 				0D78090D2C75E79600392A1B /* inputScore */,
 				0DC01F6D2C7343C2007CFBBF /* input_team_names */,
 				0DC01F6A2C732DBF007CFBBF /* number_of_teams */,
 				0DC01F672C7307E4007CFBBF /* scoreDisplay */,
 				0DABA6392C5C8636000320AC /* newMolkky */,
-				0D0BB0522C5A2E05000205A7 /* dentaku */,
 				0D60BA612C50C60500A9F416 /* molkkyapp */,
 				0D60BA732C50C60600A9F416 /* molkkyappTests */,
 				0D60BA7D2C50C60600A9F416 /* molkkyappUITests */,
@@ -139,7 +153,7 @@
 				0D60BA8D2C50E61400A9F416 /* molkkyIcon.swift */,
 				0D60BA622C50C60500A9F416 /* molkkyappApp.swift */,
 				0D60BA642C50C60500A9F416 /* ContentView.swift */,
-				0D60BA662C50C60600A9F416 /* Assets.xcassets */,
+				0D507A302C8EB3EA005A0F82 /* Assets.xcassets */,
 				0D60BA682C50C60600A9F416 /* molkkyapp.entitlements */,
 				0D60BA692C50C60600A9F416 /* Preview Content */,
 			);
@@ -182,8 +196,8 @@
 		0DABA6392C5C8636000320AC /* newMolkky */ = {
 			isa = PBXGroup;
 			children = (
+				0D494A342C7F644B0026EE8B /* molkkyScore.swift */,
 				0D8634B82C67675C001C3D14 /* Youarewin.swift */,
-				0DABA63A2C5C8654000320AC /* molkkyScore.swift */,
 			);
 			path = newMolkky;
 			sourceTree = "<group>";
@@ -317,7 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D60BA6B2C50C60600A9F416 /* Preview Assets.xcassets in Resources */,
-				0D60BA672C50C60600A9F416 /* Assets.xcassets in Resources */,
+				0D507A312C8EB3EA005A0F82 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,17 +356,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D0BB0542C5A2E16000205A7 /* dentaku.swift in Sources */,
 				0D8634B92C67675C001C3D14 /* Youarewin.swift in Sources */,
+				0D507A282C8E973D005A0F82 /* shareData.swift in Sources */,
 				0DC01F692C730800007CFBBF /* scoreDisplay.swift in Sources */,
 				0D60BA8E2C50E61400A9F416 /* molkkyIcon.swift in Sources */,
+				0D507A2F2C8E981E005A0F82 /* TeamNameInput.swift in Sources */,
 				0D60BA652C50C60500A9F416 /* ContentView.swift in Sources */,
 				0D60BA632C50C60500A9F416 /* molkkyappApp.swift in Sources */,
 				0D5364712C774EFF00E89197 /* VS_View.swift in Sources */,
 				0DC01F6C2C732E3C007CFBBF /* number_of_teams.swift in Sources */,
 				0D78090F2C75E7AB00392A1B /* inputScore.swift in Sources */,
 				0DC01F6F2C7343DD007CFBBF /* input_team_names.swift in Sources */,
-				0DABA63B2C5C8654000320AC /* molkkyScore.swift in Sources */,
+				0D507A2A2C8E9758005A0F82 /* TeamData.swift in Sources */,
+				0D494A352C7F644B0026EE8B /* molkkyScore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

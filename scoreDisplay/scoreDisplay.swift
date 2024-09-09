@@ -8,67 +8,77 @@
 import SwiftUI
 
 struct scoreDisplay: View {
+    
+    @EnvironmentObject var shareData: ShareData
 
-    @Binding var teamNames: [String]
-
-    @State var nowScore:[Int] = []
-    @State var totalScore:[Int] = []
-    @State var missShot:[Int] = []
-
+    let numberOfTeams:Int
+    let turnSelect:Int
+    
+//    let teamNames: [String]
+//
+//    let nowScore:[Int]
+//    let totalScore:[Int]
+//    let missShot:[[Bool]]
+    
     @State var gameCount = 1
-    @State var turnSelect = 0
+    
     
     var body: some View {
         
         VStack(spacing:-5) {
             HStack {
                 Text("チーム名")
-                    .padding(.leading,20)
+                    .padding(.leading,1)
               
                 Spacer()
                 
                 Text("ゲーム\(gameCount)")
-                    .padding(.trailing, 20)
+                    .padding(.trailing, 15)
 
                 Text("合計")
-                    .padding(.trailing, 20)
+                    .padding(.trailing, 10)
             }
+            .padding()
             
-            if teamNames.count > 0 && teamNames.count == nowScore.count {
-                ForEach(0..<teamNames.count,id:\.self) { team in
+            if shareData.teams.count > 0 {
+                ForEach(0...numberOfTeams,id:\.self) { team in
                     HStack {
                         VStack(alignment:.leading,spacing:5){
-                            Text(teamNames[team])
-                                .font(.title)
-                                .foregroundColor(turnSelect == team ? .yellow : .black)
+                            Text(shareData.teams[team].name)
+                                .font(.system(size: 24))
+                                .foregroundColor(turnSelect == team ? .yellow : .blue)
 
                             HStack{
                                 ForEach(0...2,id:\.self) { miss in
                                     Circle()
-                                        .stroke(Color.black , lineWidth: 1)
                                         .frame(width: 10)
-                                        .foregroundColor(.white)
+                                        .foregroundColor(shareData.teams[team].missShot[miss] == true ? .red : .white)
+                                        .overlay(
+                                            Circle().stroke(Color.black,lineWidth: 0.1)
+                                        )
                                 }
                             }
                             .padding(.leading,5)
                         }
                         .padding(.leading,20)
-                        .frame(width: 260,alignment:.leading)
+                        .frame(width: 240,alignment:.leading)
                         
 //                        Spacer()
                         
-                        Text("\(nowScore[team])")
-                            .padding()
+                        Text("\(shareData.teams[team].nowScore)")
+                            .padding(.trailing,10)
                             .font(.largeTitle)
+                            .frame(width:70,alignment:.trailing)
                         
     //                    Spacer()
                         
-                        Text("\(totalScore[team])")
+                        Text("\(shareData.teams[team].totalScore)")
                             .padding(.trailing,20)
                             .font(.largeTitle)
-                            .frame(width:60,alignment:.trailing)
+                            .frame(width:70,alignment:.trailing)
                     }
                     Divider()
+                        .padding()
                 }
             } else {
                 
@@ -77,20 +87,17 @@ struct scoreDisplay: View {
         
         Spacer()
         
-        
-        .onAppear {
-            nowScore = Array(repeating: 0, count: teamNames.count)
-            totalScore = Array(repeating: 0, count: teamNames.count)
-            missShot = Array(repeating: 0, count: teamNames.count)
-        }
-
     }
-    
-    
-    
 }
 
 #Preview {
-    scoreDisplay(teamNames: .constant(["キンクオブモルック","コンクルスス"]))
+    scoreDisplay(numberOfTeams:1,
+                 turnSelect: 0
+//                 teamNames: ["キングオブモルック","コンクルスス"],
+//                 nowScore: [44,44],
+//                 totalScore: [44,44],
+//                 missShot: [[true,false,false],[false,false,false]]
+    )
+    .environmentObject(ShareData())
 }
 
