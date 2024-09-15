@@ -25,6 +25,8 @@
 		0DC01F692C730800007CFBBF /* scoreDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC01F682C730800007CFBBF /* scoreDisplay.swift */; };
 		0DC01F6C2C732E3C007CFBBF /* number_of_teams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC01F6B2C732E3C007CFBBF /* number_of_teams.swift */; };
 		0DC01F6F2C7343DD007CFBBF /* input_team_names.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC01F6E2C7343DD007CFBBF /* input_team_names.swift */; };
+		DF27B2092C969BA30014A80A /* MyCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DF27B2072C969BA30014A80A /* MyCoreData.xcdatamodeld */; };
+		DF27B20B2C969BF00014A80A /* Persistent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF27B20A2C969BF00014A80A /* Persistent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		0DC01F682C730800007CFBBF /* scoreDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scoreDisplay.swift; sourceTree = "<group>"; };
 		0DC01F6B2C732E3C007CFBBF /* number_of_teams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = number_of_teams.swift; sourceTree = "<group>"; };
 		0DC01F6E2C7343DD007CFBBF /* input_team_names.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = input_team_names.swift; sourceTree = "<group>"; };
+		DF27B2082C969BA30014A80A /* MyCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyCoreData.xcdatamodel; sourceTree = "<group>"; };
+		DF27B20A2C969BF00014A80A /* Persistent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +126,8 @@
 		0D60BA562C50C60500A9F416 = {
 			isa = PBXGroup;
 			children = (
+				DF27B20A2C969BF00014A80A /* Persistent.swift */,
+				DF27B2072C969BA30014A80A /* MyCoreData.xcdatamodeld */,
 				0D507A2D2C8E97F2005A0F82 /* TeamNameView */,
 				0D507A262C8E96EF005A0F82 /* TeamData */,
 				0D5364722C774F0600E89197 /* VS_View */,
@@ -360,6 +366,7 @@
 				0D507A282C8E973D005A0F82 /* shareData.swift in Sources */,
 				0DC01F692C730800007CFBBF /* scoreDisplay.swift in Sources */,
 				0D60BA8E2C50E61400A9F416 /* molkkyIcon.swift in Sources */,
+				DF27B2092C969BA30014A80A /* MyCoreData.xcdatamodeld in Sources */,
 				0D507A2F2C8E981E005A0F82 /* TeamNameInput.swift in Sources */,
 				0D60BA652C50C60500A9F416 /* ContentView.swift in Sources */,
 				0D60BA632C50C60500A9F416 /* molkkyappApp.swift in Sources */,
@@ -367,6 +374,7 @@
 				0DC01F6C2C732E3C007CFBBF /* number_of_teams.swift in Sources */,
 				0D78090F2C75E7AB00392A1B /* inputScore.swift in Sources */,
 				0DC01F6F2C7343DD007CFBBF /* input_team_names.swift in Sources */,
+				DF27B20B2C969BF00014A80A /* Persistent.swift in Sources */,
 				0D507A2A2C8E9758005A0F82 /* TeamData.swift in Sources */,
 				0D494A352C7F644B0026EE8B /* molkkyScore.swift in Sources */,
 			);
@@ -719,6 +727,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DF27B2072C969BA30014A80A /* MyCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DF27B2082C969BA30014A80A /* MyCoreData.xcdatamodel */,
+			);
+			currentVersion = DF27B2082C969BA30014A80A /* MyCoreData.xcdatamodel */;
+			name = MyCoreData.xcdatamodeld;
+			path = "/Users/Tatuya/Documents/プログラミング/swiftUI/molkkyapp0915/MyCoreData.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0D60BA572C50C60500A9F416 /* Project object */;
 }
