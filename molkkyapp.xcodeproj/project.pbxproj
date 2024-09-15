@@ -25,6 +25,8 @@
 		0DC01F692C730800007CFBBF /* scoreDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC01F682C730800007CFBBF /* scoreDisplay.swift */; };
 		0DC01F6C2C732E3C007CFBBF /* number_of_teams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC01F6B2C732E3C007CFBBF /* number_of_teams.swift */; };
 		0DC01F6F2C7343DD007CFBBF /* input_team_names.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC01F6E2C7343DD007CFBBF /* input_team_names.swift */; };
+		DF27B20F2C96A76D0014A80A /* MyCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DF27B20D2C96A76D0014A80A /* MyCoreData.xcdatamodeld */; };
+		DF27B2132C96AA5C0014A80A /* Persistent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF27B2122C96AA5C0014A80A /* Persistent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		0DC01F682C730800007CFBBF /* scoreDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scoreDisplay.swift; sourceTree = "<group>"; };
 		0DC01F6B2C732E3C007CFBBF /* number_of_teams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = number_of_teams.swift; sourceTree = "<group>"; };
 		0DC01F6E2C7343DD007CFBBF /* input_team_names.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = input_team_names.swift; sourceTree = "<group>"; };
+		DF27B20E2C96A76D0014A80A /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		DF27B2122C96AA5C0014A80A /* Persistent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +126,7 @@
 		0D60BA562C50C60500A9F416 = {
 			isa = PBXGroup;
 			children = (
+				DF27B20C2C96A7340014A80A /* MyCoreData */,
 				0D507A2D2C8E97F2005A0F82 /* TeamNameView */,
 				0D507A262C8E96EF005A0F82 /* TeamData */,
 				0D5364722C774F0600E89197 /* VS_View */,
@@ -224,6 +229,15 @@
 				0DC01F6E2C7343DD007CFBBF /* input_team_names.swift */,
 			);
 			path = input_team_names;
+			sourceTree = "<group>";
+		};
+		DF27B20C2C96A7340014A80A /* MyCoreData */ = {
+			isa = PBXGroup;
+			children = (
+				DF27B20D2C96A76D0014A80A /* MyCoreData.xcdatamodeld */,
+				DF27B2122C96AA5C0014A80A /* Persistent.swift */,
+			);
+			path = MyCoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -359,6 +373,7 @@
 				0D8634B92C67675C001C3D14 /* Youarewin.swift in Sources */,
 				0DC01F692C730800007CFBBF /* scoreDisplay.swift in Sources */,
 				0D60BA8E2C50E61400A9F416 /* molkkyIcon.swift in Sources */,
+				DF27B20F2C96A76D0014A80A /* MyCoreData.xcdatamodeld in Sources */,
 				0D507A2F2C8E981E005A0F82 /* TeamNameInput.swift in Sources */,
 				0D60BA652C50C60500A9F416 /* ContentView.swift in Sources */,
 				0D60BA632C50C60500A9F416 /* molkkyappApp.swift in Sources */,
@@ -367,6 +382,7 @@
 				0DB040872C969EE700BDF9A1 /* TeamData.swift in Sources */,
 				0D78090F2C75E7AB00392A1B /* inputScore.swift in Sources */,
 				0DC01F6F2C7343DD007CFBBF /* input_team_names.swift in Sources */,
+				DF27B2132C96AA5C0014A80A /* Persistent.swift in Sources */,
 				0DB040882C969EE700BDF9A1 /* shareData.swift in Sources */,
 				0D494A352C7F644B0026EE8B /* molkkyScore.swift in Sources */,
 			);
@@ -528,7 +544,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"molkkyapp/Preview Content\"";
-				DEVELOPMENT_TEAM = C79ZNP245P;
+				DEVELOPMENT_TEAM = JK99459UWW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -565,7 +581,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"molkkyapp/Preview Content\"";
-				DEVELOPMENT_TEAM = C79ZNP245P;
+				DEVELOPMENT_TEAM = JK99459UWW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -719,6 +735,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DF27B20D2C96A76D0014A80A /* MyCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DF27B20E2C96A76D0014A80A /* Model.xcdatamodel */,
+			);
+			currentVersion = DF27B20E2C96A76D0014A80A /* Model.xcdatamodel */;
+			path = MyCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0D60BA572C50C60500A9F416 /* Project object */;
 }
