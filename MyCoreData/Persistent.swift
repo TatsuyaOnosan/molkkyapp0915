@@ -2,7 +2,7 @@
 //  Persistent.swift
 //  molkkyapp
 //
-//  Created by Tatsuya Ono on 2024/09/15.
+//  Created by 小野竜弥on 2024/09/15.
 //
 
 import CoreData
